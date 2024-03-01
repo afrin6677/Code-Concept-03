@@ -9,6 +9,9 @@ form[name="contact-us"] {
     margin-top: 32px;
     .button {
       width: 100%;
+      border-radius: 0px;
+      background: var(--gradient);
+      padding: 16px 40px; 
     }
   }
   .form-field:nth-child(1),

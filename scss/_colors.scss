@@ -7,22 +7,22 @@
   --h5-font-size: 1.3125rem;
   --text-font-size: 1rem;
   --shadow: 0px 0px 2px 0px rgba(204, 204, 204, 0.4);
-  --color-bg: #F5F8FF;
+  --color-bg: #19272B;
   --color-border:#6172F3;
   // Don't remove variable from below. This whole project using this variable
-  --color-primary: #FF5005;
-  --color-primary-light: rgba(255, 80, 5, 0.10);
+  --color-primary: #2DB87F;
+  --color-primary-light: #F7F7F7;
   --color-white: #fff;
   --color-black: #101828;
   --color-mute-1: #606061;
   --color-mute-2: #7c7c7d;
   --color-mute-3: #929294;
-  --color-secondary: #bc5021;
-  --color-secondary-light: #f67d49;
-  --color-grey:#797a7b;
+  --color-secondary: #19272B;
+  --color-secondary-light: #989898;
+  --color-grey:#666;
   --color-purple: rgba(96, 93, 186, 1);
   --color-tertiary: rgba(239, 63, 110, 1);
-  --gradient: linear-gradient(98deg, var(--color-primary) 2.35%, var(--color-primary-light) 96.42%);
+  --gradient: linear-gradient(135deg, #1BB69D 0%, #2DB87F 100%);
   --gradient-secondary: linear-gradient(98deg, var(--color-primary-light) 1.62%, var(--color-primary) 95.67%);
 }
 

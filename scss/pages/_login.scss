@@ -33,16 +33,17 @@
 
     .form-actions .button {
       display: inline-block;
+      font-family: Inter;
       margin-left: 5px;
       margin-right: 5px;
-      background-color: var(--color-primary);
-      background-image: none;
+      background: var(--gradient);
       --animate-duration: 1s;
       --animate-repeat: 1;
       --animate-delay: 0.5s;
       transition: all .2s ease-in-out;
       padding: 10px 30px;
       font-size: 18px;
+      border-radius: 0px;
 
       @include desktop-small {
         margin-bottom: 10px;

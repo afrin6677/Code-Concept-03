@@ -1,11 +1,11 @@
 .features {
   display: flex;
-  padding: 3.75rem 0rem;
+  padding: 100px auto 97px auto; 
   flex-direction: column;
   align-items: center;
-  gap: 0.625rem;
+  gap: 0rem;
   align-self: stretch;
-  background: var(--color-bg, #f0f0f8);
+  background: none;
 
   @include desktop-small {
     padding: 3rem 1rem;
@@ -18,19 +18,22 @@
 
   .block-title {
     color: var(--color-black);
-    // width: 60%;
-    text-align: center;
-    font-size: 48px;
-
-    @include desktop-small {
-      font-size: 36px;
-    }
-
+    font-family: Inter;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 60px;
-    /* 125% */
-    letter-spacing: -0.96px;
+    line-height: 32px; 
+    margin-bottom: 12px;
+    width: 269px;
+    height: 76px;
+    flex-shrink: 0;
+
+    @include desktop-small {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+    }
   }
 
   .features-container {
@@ -39,7 +42,7 @@
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 1.5rem;
+    gap: 0rem;
     flex-wrap: wrap;
 
     @include desktop-small {
@@ -49,18 +52,51 @@
 
     .feature {
       display: flex;
-      padding: 1.5rem;
       align-items: flex-start;
-      gap: 0.75rem;
+      gap: 12px;
       flex-shrink: 0;
       cursor: pointer;
-      border-radius: 0.625rem;
       background: #fff;
-      box-shadow: 0px 0px 2px 0px rgba(204, 204, 204, 0.4);
+      padding: 32px 24px; 
+      
       transition: all 0.3s ease-in-out;
       /* Add a smooth transition effect */
       flex: 40%;
       align-self: stretch;
+
+      &:first-of-type {
+        border: 2px solid var(--color-grey);
+      }
+
+      &:nth-of-type(2) {
+        border-top: 2px solid var(--color-grey);
+        border-bottom: 2px solid var(--color-grey);
+        border-right: 2px solid var(--color-grey);
+
+        @include desktop-small {
+          border-top: none;
+          border-bottom: 2px solid var(--color-grey);
+          border-right: 2px solid var(--color-grey);
+          border-left: 2px solid var(--color-grey);
+        }
+      }
+
+      &:nth-of-type(3) {
+        border-top: 2px solid var(--color-grey);
+        border-bottom: 2px solid var(--color-grey);
+        border-right: 2px solid var(--color-grey);
+
+        @include desktop-small {
+          border-top: none;
+          border-bottom: 2px solid var(--color-grey);
+          border-right: 2px solid var(--color-grey);
+          border-left: 2px solid var(--color-grey);
+        }
+      }
+
+      &:hover {
+        border: 2px solid var(--color-primary);
+      }
 
       &.small-header {
         .feature-title {
@@ -95,7 +131,12 @@
       }
 
       p {
-        color: #667085;
+        color: var(--color-black);
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
       }
 
       .feature-container {

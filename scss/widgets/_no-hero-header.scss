@@ -32,6 +32,7 @@
   .paragraph.no-hero {
     background: none;
     padding: 0px 100px;
+    justify-content: flex-start !important;
 
     @include mobile {
       padding: 0px 50px;
@@ -39,6 +40,7 @@
 
     .no-hero-title-wrapper {
       margin-top: 70px;
+      
 
       @include mobile {
         margin-top: 40px;
@@ -46,8 +48,8 @@
 
       h1 {
         font-size: 3.2rem;
-        text-align: center;
-        color: var(--color-white);
+        text-align: left;
+        color: var(--color-black);
 
         @include mobile {
           font-size: 2rem;
@@ -59,7 +61,7 @@
       display: inline-block;
       margin-top: 20px;
       width: 100%;
-      text-align: center;
+      text-align: left;
 
       ol {
         display: inline-block;
@@ -80,13 +82,17 @@
           &+.breadcrumb-item::before {
             float: left;
             padding-right: 9px;
-            content: "/";
+            // content: "/";
           }
 
           &.arry i {
             font-size: 12px;
             display: inline-block;
             line-height: 30px;
+          }
+
+          &:last-of-type {
+            color: var(--color-primary) !important;
           }
         }
       }

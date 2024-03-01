@@ -1,24 +1,68 @@
 .text-left.paragraph {
 
+  @include desktop-small {
+    padding: 0rem;
+    margin: 0rem 0rem !important;
+    padding: 0rem !important;
+  }
+
   .text-left-container{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 1rem;
 
     @include desktop-small {
       flex-direction: column-reverse;
+      padding: 0rem !important;
+      margin: 0rem !important;
+    }
+
+    .text-left-text {
+      // width: 520px; 
+
+      @include desktop-small {
+        width: auto;
+        padding: 1rem;
+      }
+
+      p {
+        // width: 520px; 
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        width: 532px; 
+        align-self: stretch;
+
+        @include desktop-small {
+          width: auto;
+          font-size: 18px;
+          line-height: 28px;
+          width: auto;
+        }
+      }
     }
 
   .block-title {
     h3 {
-      font-size: 40px;
+      font-family: Inter;
+      font-size: 48px;
       font-style: normal;
-      font-weight: 600;
-      line-height: 60px;
-      letter-spacing: -0.96px;
-      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 60px; 
+      letter-spacing: -0.96px; 
+      margin-bottom: 10px;
+
+      @include desktop-small {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px; 
+        letter-spacing: -0.72px; 
+      }
     }
   }
   .paragraph-text{
