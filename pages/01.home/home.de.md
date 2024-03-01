@@ -1,5 +1,5 @@
 ---
-title: Startseite
+title: Home
 content:
     items: self@.modular
 ---

@@ -1,6 +1,5 @@
 ---
-title: Datenschutzbestimmungen
+title: 'Privacy Policy'
 content:
     items: self@.modular
 ---
-

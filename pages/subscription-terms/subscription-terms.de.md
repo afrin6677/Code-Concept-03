@@ -1,6 +1,5 @@
 ---
-title: 'Abonnement Bedingungen &amp; Konditionen'
+title: 'Subscription Terms & Conditions'
 content:
     items: self@.modular
 ---
-

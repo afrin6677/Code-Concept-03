@@ -1,6 +1,5 @@
 ---
-title: 'Condiciones generales'
+title: 'Terms & Conditions'
 content:
     items: self@.modular
 ---
-

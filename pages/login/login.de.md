@@ -1,8 +1,7 @@
 ---
-title: Anmeldung
+title: Login
 login_redirect_here: false
-cache_control: 'private, no-cache, must-revalidate'
+cache_control: private, no-cache, must-revalidate
 access:
     site.login: false
 ---
-
