@@ -6,7 +6,7 @@
 			<div class="type">
 				<div class="type-wrap">{{ plan_translations.name }}</div>
 			</div>
-			<p class="description">{{ plan_translations.description }}</p>
+			{# <p class="description">{{ plan_translations.description }}</p> #}
 
 			<div class="pricing-group">
 				<span class="pricing-wrap">
@@ -40,6 +40,7 @@
 						{% endif %}
 					{% endif %}
 				</span>
+				
 				{% if plan.trial_days %}
 					<p class="text-md font-medium text-gray-500">{{ plan.trial_days }}
 						{{ "METRICALO.TRIAL_DAYS"|t }}</p>
