@@ -19,7 +19,11 @@ body {
   font-weight: 400;
   line-height: 1.7;
   position: relative;
-  padding-top: $header-gap;
+
+  @include desktop-small {
+    padding-top: $header-gap;
+  }
+  
 }
 .bg-white{
   background-color: var(--color-white) !important;
