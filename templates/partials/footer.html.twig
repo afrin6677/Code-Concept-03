@@ -1,0 +1,52 @@
+<footer class="footer slide-up">
+  <div class="container footer-container">
+    <div class="footer-top">
+      <div class="logo">
+        {% if theme['footer_logo'] %}
+          {% set imageIndex =  array_keys(theme['footer_logo'])[0] %}
+          {% set footer_logoArray = theme['footer_logo'][imageIndex] %}
+          {% set footer_logoPath = footer_logoArray['path'] %}
+          {% set footer_logo = url(footer_logoPath) %}
+        {% else %}
+          {% set footer_logo = url('theme://images/logo-footer.png') %}
+        {% endif %}'
+
+        <div class="">
+          <img class="logo" style="width: {{ footer_logo_size }}"
+               src="{{ footer_logo }}" />
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <h4 class="footer-title">{{ "METRICALO.FOOTER_LINKS"|t }}</h4>
+        <div class="frame-24">
+          {% for link in config.site.footer.links %}
+            {% set link_page = pages.find(link) %}
+            {% if link_page %}
+              <div class="menu-item"><a rel="noopener noreferrer" href="{{ link_page.url }}">{{ link_page.menu }}</a></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">{{ "METRICALO.CONTACT_INFO"|t }}</h4>
+        <div class="flexcontainer">
+          {% include 'widgets/contact.html.twig' %}
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-cards"><img class="master" src="{{ url('theme://images/master.svg') }}" />
+      <div class="visa-wrapper"><img class="visa" src="{{ url('theme://images/visa.svg') }}" /></div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>{{ "METRICALO.COPYRIGHT"|t|raw }} {{ data.name }} {{ "now"|date('Y') }},  {{ data.company.name }} - {{data.company.country_code}} {{ data.company.business_number }} - {{ data.company.address }}, {{ data.company.city }}, {{ data.company.postcode }}, {{ data.company.country }} | {{ "METRICALO.RIGHTS_RESERVED"|t }}.</p>
+    </div>
+
+  </div>
+
+  {% set bg = url('theme://images/bg-dot.svg') %}
+  <img class="footer-bg-dotted-img" src="{{ bg }}" alt="">
+</footer>

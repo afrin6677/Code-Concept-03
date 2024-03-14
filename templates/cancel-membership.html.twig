@@ -6,12 +6,12 @@
     'title': page.header.title,
     'links': [
       {
-        'url': '/',
-        'title': "BSCOPE.LOGIN_HEADER_HOME"|t
+        'url': '/' ~ grav.language.getActive,
+        'title': "METRICALO.HOME"|t
       },
       {
-        'url': url('profile'),
-        'title': "BSCOPE.BREADCRUMB_PROFILE"|t
+        'url': url(grav.language.getActive ~ '/profile'),
+        'title': "METRICALO.PROFILE"|t
       },
       {
         'title': 'METRICALO.CANCEL_SUBSCRIPTION'|t

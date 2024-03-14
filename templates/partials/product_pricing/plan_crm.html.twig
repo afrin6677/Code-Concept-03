@@ -28,7 +28,7 @@
 				
 							{% if product.pricing_plan.subscription_trial_days %}
 				<p>{{ product.pricing_plan.subscription_trial_days }}
-					{{ "METRICALO.TRIAL_DAYS"|t }}</p>
+					{{ "METRICALO.TRIAL_DAYS"|t }} / {{ product.pricing_plan.price }} {{ product.pricing_plan.currency }}</p>
 			{% endif %}
 			</div>
 
