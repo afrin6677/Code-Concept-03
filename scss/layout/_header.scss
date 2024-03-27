@@ -65,7 +65,7 @@
           }
   
           &.active a {
-            color: var(--color-black);
+            color: var(--color-primary) !important;
           }
         }
       }
